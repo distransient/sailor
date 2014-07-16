@@ -1,8 +1,8 @@
 {
   "name": "sailor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cowsay-style Sailor Moon ascii art program!",
-  "main": "index.js",
+  "bin": { "sailor": "./index.js" },
   "repository": {
     "type": "git",
     "url": "git://github.com/mkgh/sailor"
