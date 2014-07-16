@@ -1,0 +1,24 @@
+{
+  "name": "sailor",
+  "version": "0.0.1",
+  "description": "Cowsay-style Sailor Moon ascii art program!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mkgh/sailor"
+  },
+  "keywords": [
+    "Sailor Moon",
+    "terminal",
+    "prompt"
+  ],
+  "author": "Kel <humanoidanalog@gmail.com>",
+  "license": "Public",
+  "bugs": {
+    "url": "https://github.com/mkgh/sailor/issues"
+  },
+  "homepage": "https://github.com/mkgh/sailor",
+  "dependencies": {
+    "word-wrap": "^0.1.3"
+  }
+}
