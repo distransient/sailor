@@ -16,7 +16,7 @@ sailor "some message"
 
 Piped:
 ```bash
-fortune | sailor # or any other echoing program that pipes
+fortune | sailor # or any other program 
 ```
 
 Help:
