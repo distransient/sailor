@@ -12,7 +12,11 @@ var wrap = require('word-wrap')
     + '\n\nYou can find the original art here:\n  '
     + 'http://projectanime.com/sailormoon/sm-ascii.htm\n\n'
 
-  , main = 'moon1'
+  , art = [ 'chibi', 'haruka', 'jupiter', 'luna', 'makoto', 'mars1', 'mars2'
+    , 'mercury', 'michiru', 'moon1', 'moon2', 'neptune', 'rei', 'scout'
+    , 'uranus', 'usagi1', 'usagi2', 'usagi3', 'venus']
+
+  , main = art[Math.floor(Math.random() * art.length)]
 
 // implemented as a pure function, for fun and profit
 process.stdin.on('readable', function () { 
