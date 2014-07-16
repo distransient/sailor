@@ -1,5 +1,9 @@
 # Sailor
 
+Sailor Moon cli art + message
+
+![Example](https://raw.githubusercontent.com/mkgh/sailor/master/example.png)
+
 Install: 
 ```bash
 npm install -g sailor
