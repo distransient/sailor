@@ -68,7 +68,7 @@ function style (lines, art) {
 
 function load (art) {
   return fs.readFileSync(
-    path.join(path.dirname(process.argv[1]), 'art', art)
+    path.join(path.dirname(process.mainModule.filename), 'art', art)
   , { encoding: 'utf8' }
   )
 }
