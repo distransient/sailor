@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 process.stdin.setEncoding('utf8')
 
+// code copyright michael keating 2014, and may be licensed under the
+// "MIT" or BSD 2 clause licenses.
+
 var wrap = require('word-wrap')
   , path = require('path')
   , fs = require('fs')
@@ -16,8 +19,6 @@ var wrap = require('word-wrap')
     , 'mercury', 'michiru', 'moon1', 'moon2', 'neptune', 'rei', 'scout'
     , 'uranus', 'usagi1', 'usagi2', 'usagi3', 'venus']
 
-  , main = art[Math.floor(Math.random() * art.length)]
-
 // implemented as a pure function, for fun and profit
 process.stdin.on('readable', function () { 
   process.stdout.write(
@@ -32,15 +33,18 @@ process.stdin.on('readable', function () {
             process.argv.slice(4, process.argv.length).join(' ')
           , process.argv[3]
           ) : format(process.stdin.read(), process.argv[3])
-        ) : format(process.argv.slice(2, process.argv.length).join(' '), main)
+        ) : format(
+          process.argv.slice(2, process.argv.length).join(' ')
+        , art[Math.floor(Math.random() * art.length)]
+        )
       )
     ) : (  // or a pipe
-      format(process.stdin.read(), main) 
+      format(process.stdin.read(), art[Math.floor(Math.random() * art.length)])
     )
   )
 })
 
-// formats text into array of text lines and parses it thru "style", which creates art
+// formats text into array of text lines and parses it thru "style"
 // "null" is process.stdin.read's EOF value, run a newline with it!
 function format (text, art) { 
   return text === null ? '\n' : style(

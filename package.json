@@ -1,25 +1,13 @@
-{
-  "name": "sailor",
-  "version": "0.0.5",
-  "description": "Cowsay-style Sailor Moon ascii art program!",
-  "bin": { "sailor": "./index.js" },
-  "preferGlobal": true,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mkgh/sailor"
-  },
-  "keywords": [
-    "Sailor Moon",
-    "terminal",
-    "prompt"
-  ],
-  "author": "Kel <humanoidanalog@gmail.com>",
-  "license": "Public",
-  "bugs": {
-    "url": "https://github.com/mkgh/sailor/issues"
-  },
-  "homepage": "https://github.com/mkgh/sailor",
-  "dependencies": {
-    "word-wrap": "^0.1.3"
-  }
+{ "name": "sailor"
+, "version": "0.0.6"
+, "description": "Cowsay-style Sailor Moon ascii art program!"
+, "bin": { "sailor": "./index.js" }
+, "preferGlobal": true
+, "repository": { "type": "git", "url": "git://github.com/mkgh/sailor" }
+, "keywords": [ "Sailor Moon", "terminal", "prompt" ]
+, "author": "Kel <humanoidanalog@gmail.com>"
+, "license": "Public"
+, "bugs": { "url": "https://github.com/mkgh/sailor/issues" }
+, "homepage": "https://github.com/mkgh/sailor"
+, "dependencies": { "word-wrap": "^0.1.3" }
 }
